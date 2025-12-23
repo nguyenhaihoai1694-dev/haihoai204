@@ -1,0 +1,606 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8434E6AB2EE1BE7600D0C3B4 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 8434E6AA2EE1BE7600D0C3B4 /* Alamofire */; };
+		8434E6AF2EE1C20700D0C3B4 /* StoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8434E6AE2EE1C20000D0C3B4 /* StoryModel.swift */; };
+		8434E6B22EE9A5BB00D0C3B4 /* ItemProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8434E6B12EE9A56C00D0C3B4 /* ItemProfileView.swift */; };
+		8434E6B42EE9A5D200D0C3B4 /* UserItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8434E6B32EE9A5C800D0C3B4 /* UserItemView.swift */; };
+		8434E6B82EE9B52600D0C3B4 /* ProfileUseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8434E6B72EE9B50F00D0C3B4 /* ProfileUseView.swift */; };
+		8434E6CC2EEAE3D000D0C3B4 /* ZaloSettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8434E6CB2EEAE3BE00D0C3B4 /* ZaloSettingView.swift */; };
+		8434E6D12EED6FFC00D0C3B4 /* AccountSecurityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8434E6D02EED6FE400D0C3B4 /* AccountSecurityView.swift */; };
+		8434E6D32EF014CC00D0C3B4 /* PrivacyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8434E6D22EF014CA00D0C3B4 /* PrivacyView.swift */; };
+		8434E6D52EF2894300D0C3B4 /* NotificationSettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8434E6D42EF2894000D0C3B4 /* NotificationSettingView.swift */; };
+		8434E6D72EF4373A00D0C3B4 /* MessageSettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8434E6D62EF4373800D0C3B4 /* MessageSettingView.swift */; };
+		8434E6D92EF43B6800D0C3B4 /* CallSettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8434E6D82EF43B6500D0C3B4 /* CallSettingView.swift */; };
+		8454C96F2EDF12C500831892 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8454C96B2EDF12C500831892 /* Assets.xcassets */; };
+		8454C9712EDF12C500831892 /* FeedNewZaloApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8454C96D2EDF12C500831892 /* FeedNewZaloApp.swift */; };
+		8454C9732EDF12D600831892 /* HomeZaloView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8454C9722EDF12D200831892 /* HomeZaloView.swift */; };
+		8454C99D2EDF1CA300831892 /* ZaloTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8454C99C2EDF1C9600831892 /* ZaloTabView.swift */; };
+		8454C99F2EDF1EBF00831892 /* CuttomTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8454C99E2EDF1EB400831892 /* CuttomTabView.swift */; };
+		8454C9A42EDF20E500831892 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8454C9A32EDF20DF00831892 /* ChatView.swift */; };
+		8454C9A82EDF21D300831892 /* ViewProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8454C9A72EDF21CD00831892 /* ViewProfile.swift */; };
+		8454C9AB2EDF22FD00831892 /* FeedNewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8454C9AA2EDF22EB00831892 /* FeedNewView.swift */; };
+		8454C9AD2EDF233300831892 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8454C9AC2EDF232500831892 /* HeaderView.swift */; };
+		8454C9AF2EDF247300831892 /* DiaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8454C9AE2EDF244800831892 /* DiaryView.swift */; };
+		8454C9B12EE0415800831892 /* KhoanKhacView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8454C9B02EE0415100831892 /* KhoanKhacView.swift */; };
+		8454C9B32EE068C300831892 /* ZaloPostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8454C9B22EE068AF00831892 /* ZaloPostView.swift */; };
+		8454C9B52EE06D9200831892 /* ZaloVideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8454C9B42EE06D8900831892 /* ZaloVideoView.swift */; };
+		8454C9B82EE0763A00831892 /* video1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 8454C9B72EE0763A00831892 /* video1.mp4 */; };
+		8454C9C62EE1BB2C00831892 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8454C9C52EE1BB2B00831892 /* APIError.swift */; };
+		8454C9C82EE1BB3A00831892 /* APIEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8454C9C72EE1BB3800831892 /* APIEndpoint.swift */; };
+		8454C9CA2EE1BB4500831892 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8454C9C92EE1BB4400831892 /* APIClient.swift */; };
+		8454C9CC2EE1BB5300831892 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8454C9CB2EE1BB5100831892 /* User.swift */; };
+		8454C9D02EE1BB7000831892 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8454C9CF2EE1BB6F00831892 /* UserService.swift */; };
+		8454C9D22EE1BBBC00831892 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8454C9D12EE1BBBB00831892 /* UserViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8434E6AE2EE1C20000D0C3B4 /* StoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryModel.swift; sourceTree = "<group>"; };
+		8434E6B12EE9A56C00D0C3B4 /* ItemProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemProfileView.swift; sourceTree = "<group>"; };
+		8434E6B32EE9A5C800D0C3B4 /* UserItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserItemView.swift; sourceTree = "<group>"; };
+		8434E6B72EE9B50F00D0C3B4 /* ProfileUseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileUseView.swift; sourceTree = "<group>"; };
+		8434E6CB2EEAE3BE00D0C3B4 /* ZaloSettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZaloSettingView.swift; sourceTree = "<group>"; };
+		8434E6D02EED6FE400D0C3B4 /* AccountSecurityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSecurityView.swift; sourceTree = "<group>"; };
+		8434E6D22EF014CA00D0C3B4 /* PrivacyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyView.swift; sourceTree = "<group>"; };
+		8434E6D42EF2894000D0C3B4 /* NotificationSettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationSettingView.swift; sourceTree = "<group>"; };
+		8434E6D62EF4373800D0C3B4 /* MessageSettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageSettingView.swift; sourceTree = "<group>"; };
+		8434E6D82EF43B6500D0C3B4 /* CallSettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallSettingView.swift; sourceTree = "<group>"; };
+		8454C95D2EDF126D00831892 /* FeedNewZalo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FeedNewZalo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8454C96B2EDF12C500831892 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8454C96D2EDF12C500831892 /* FeedNewZaloApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedNewZaloApp.swift; sourceTree = "<group>"; };
+		8454C9722EDF12D200831892 /* HomeZaloView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeZaloView.swift; sourceTree = "<group>"; };
+		8454C99C2EDF1C9600831892 /* ZaloTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZaloTabView.swift; sourceTree = "<group>"; };
+		8454C99E2EDF1EB400831892 /* CuttomTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuttomTabView.swift; sourceTree = "<group>"; };
+		8454C9A32EDF20DF00831892 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		8454C9A72EDF21CD00831892 /* ViewProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewProfile.swift; sourceTree = "<group>"; };
+		8454C9AA2EDF22EB00831892 /* FeedNewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedNewView.swift; sourceTree = "<group>"; };
+		8454C9AC2EDF232500831892 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		8454C9AE2EDF244800831892 /* DiaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryView.swift; sourceTree = "<group>"; };
+		8454C9B02EE0415100831892 /* KhoanKhacView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KhoanKhacView.swift; sourceTree = "<group>"; };
+		8454C9B22EE068AF00831892 /* ZaloPostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZaloPostView.swift; sourceTree = "<group>"; };
+		8454C9B42EE06D8900831892 /* ZaloVideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZaloVideoView.swift; sourceTree = "<group>"; };
+		8454C9B72EE0763A00831892 /* video1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video1.mp4; sourceTree = "<group>"; };
+		8454C9C52EE1BB2B00831892 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		8454C9C72EE1BB3800831892 /* APIEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEndpoint.swift; sourceTree = "<group>"; };
+		8454C9C92EE1BB4400831892 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		8454C9CB2EE1BB5100831892 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		8454C9CF2EE1BB6F00831892 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		8454C9D12EE1BBBB00831892 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8454C95A2EDF126D00831892 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8434E6AB2EE1BE7600D0C3B4 /* Alamofire in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8434E6B02EE1CC4200D0C3B4 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				8454C9CF2EE1BB6F00831892 /* UserService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		8434E6CF2EED6FAD00D0C3B4 /* SettingView */ = {
+			isa = PBXGroup;
+			children = (
+				8434E6D82EF43B6500D0C3B4 /* CallSettingView.swift */,
+				8434E6D62EF4373800D0C3B4 /* MessageSettingView.swift */,
+				8434E6D42EF2894000D0C3B4 /* NotificationSettingView.swift */,
+				8434E6D02EED6FE400D0C3B4 /* AccountSecurityView.swift */,
+			);
+			path = SettingView;
+			sourceTree = "<group>";
+		};
+		8454C9542EDF126D00831892 = {
+			isa = PBXGroup;
+			children = (
+				8454C96E2EDF12C500831892 /* FeedNewZalo */,
+				8454C95E2EDF126D00831892 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8454C95E2EDF126D00831892 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8454C95D2EDF126D00831892 /* FeedNewZalo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8454C96E2EDF12C500831892 /* FeedNewZalo */ = {
+			isa = PBXGroup;
+			children = (
+				8454C9BE2EE1B6E600831892 /* Service */,
+				8454C9B62EE0762900831892 /* video */,
+				8454C9742EDF12DB00831892 /* Modules */,
+				8454C96B2EDF12C500831892 /* Assets.xcassets */,
+				8454C96D2EDF12C500831892 /* FeedNewZaloApp.swift */,
+			);
+			path = FeedNewZalo;
+			sourceTree = "<group>";
+		};
+		8454C9742EDF12DB00831892 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				8454C9A62EDF21C000831892 /* Profile */,
+				8454C9A22EDF20D100831892 /* Chat */,
+				8454C9752EDF12F800831892 /* Home */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		8454C9752EDF12F800831892 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				8434E6B02EE1CC4200D0C3B4 /* Service */,
+				8454C9782EDF133400831892 /* ViewModel */,
+				8454C9772EDF131400831892 /* Model */,
+				8454C9762EDF130500831892 /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		8454C9762EDF130500831892 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8454C9B42EE06D8900831892 /* ZaloVideoView.swift */,
+				8454C9B22EE068AF00831892 /* ZaloPostView.swift */,
+				8454C9B02EE0415100831892 /* KhoanKhacView.swift */,
+				8454C9AE2EDF244800831892 /* DiaryView.swift */,
+				8454C9AC2EDF232500831892 /* HeaderView.swift */,
+				8454C9AA2EDF22EB00831892 /* FeedNewView.swift */,
+				8454C99E2EDF1EB400831892 /* CuttomTabView.swift */,
+				8454C99C2EDF1C9600831892 /* ZaloTabView.swift */,
+				8454C9722EDF12D200831892 /* HomeZaloView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8454C9772EDF131400831892 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8434E6AE2EE1C20000D0C3B4 /* StoryModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8454C9782EDF133400831892 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				8454C9D12EE1BBBB00831892 /* UserViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		8454C9A22EDF20D100831892 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				8454C9A52EDF20F600831892 /* View */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		8454C9A52EDF20F600831892 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8454C9A32EDF20DF00831892 /* ChatView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8454C9A62EDF21C000831892 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				8454C9A92EDF21E000831892 /* View */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		8454C9A92EDF21E000831892 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8434E6D22EF014CA00D0C3B4 /* PrivacyView.swift */,
+				8434E6CB2EEAE3BE00D0C3B4 /* ZaloSettingView.swift */,
+				8434E6B72EE9B50F00D0C3B4 /* ProfileUseView.swift */,
+				8434E6B32EE9A5C800D0C3B4 /* UserItemView.swift */,
+				8434E6B12EE9A56C00D0C3B4 /* ItemProfileView.swift */,
+				8454C9A72EDF21CD00831892 /* ViewProfile.swift */,
+				8434E6CF2EED6FAD00D0C3B4 /* SettingView */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8454C9B62EE0762900831892 /* video */ = {
+			isa = PBXGroup;
+			children = (
+				8454C9B72EE0763A00831892 /* video1.mp4 */,
+			);
+			path = video;
+			sourceTree = "<group>";
+		};
+		8454C9BE2EE1B6E600831892 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				8454C9CB2EE1BB5100831892 /* User.swift */,
+				8454C9C92EE1BB4400831892 /* APIClient.swift */,
+				8454C9C72EE1BB3800831892 /* APIEndpoint.swift */,
+				8454C9C52EE1BB2B00831892 /* APIError.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8454C95C2EDF126D00831892 /* FeedNewZalo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8454C9682EDF126F00831892 /* Build configuration list for PBXNativeTarget "FeedNewZalo" */;
+			buildPhases = (
+				8454C9592EDF126D00831892 /* Sources */,
+				8454C95A2EDF126D00831892 /* Frameworks */,
+				8454C95B2EDF126D00831892 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FeedNewZalo;
+			packageProductDependencies = (
+				8434E6AA2EE1BE7600D0C3B4 /* Alamofire */,
+			);
+			productName = FeedNewZalo;
+			productReference = 8454C95D2EDF126D00831892 /* FeedNewZalo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8454C9552EDF126D00831892 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2610;
+				LastUpgradeCheck = 2610;
+				TargetAttributes = {
+					8454C95C2EDF126D00831892 = {
+						CreatedOnToolsVersion = 26.1.1;
+					};
+				};
+			};
+			buildConfigurationList = 8454C9582EDF126D00831892 /* Build configuration list for PBXProject "FeedNewZalo" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8454C9542EDF126D00831892;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				8434E6A92EE1BE7600D0C3B4 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 8454C95E2EDF126D00831892 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8454C95C2EDF126D00831892 /* FeedNewZalo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8454C95B2EDF126D00831892 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8454C96F2EDF12C500831892 /* Assets.xcassets in Resources */,
+				8454C9B82EE0763A00831892 /* video1.mp4 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8454C9592EDF126D00831892 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8454C9AD2EDF233300831892 /* HeaderView.swift in Sources */,
+				8454C9B12EE0415800831892 /* KhoanKhacView.swift in Sources */,
+				8454C9B32EE068C300831892 /* ZaloPostView.swift in Sources */,
+				8434E6B22EE9A5BB00D0C3B4 /* ItemProfileView.swift in Sources */,
+				8434E6D32EF014CC00D0C3B4 /* PrivacyView.swift in Sources */,
+				8434E6CC2EEAE3D000D0C3B4 /* ZaloSettingView.swift in Sources */,
+				8454C99F2EDF1EBF00831892 /* CuttomTabView.swift in Sources */,
+				8454C9CC2EE1BB5300831892 /* User.swift in Sources */,
+				8454C9732EDF12D600831892 /* HomeZaloView.swift in Sources */,
+				8454C9D02EE1BB7000831892 /* UserService.swift in Sources */,
+				8454C9D22EE1BBBC00831892 /* UserViewModel.swift in Sources */,
+				8454C9A82EDF21D300831892 /* ViewProfile.swift in Sources */,
+				8454C9A42EDF20E500831892 /* ChatView.swift in Sources */,
+				8434E6D12EED6FFC00D0C3B4 /* AccountSecurityView.swift in Sources */,
+				8434E6D72EF4373A00D0C3B4 /* MessageSettingView.swift in Sources */,
+				8454C9C82EE1BB3A00831892 /* APIEndpoint.swift in Sources */,
+				8434E6AF2EE1C20700D0C3B4 /* StoryModel.swift in Sources */,
+				8434E6D92EF43B6800D0C3B4 /* CallSettingView.swift in Sources */,
+				8434E6D52EF2894300D0C3B4 /* NotificationSettingView.swift in Sources */,
+				8454C9CA2EE1BB4500831892 /* APIClient.swift in Sources */,
+				8454C9AF2EDF247300831892 /* DiaryView.swift in Sources */,
+				8454C9712EDF12C500831892 /* FeedNewZaloApp.swift in Sources */,
+				8454C9AB2EDF22FD00831892 /* FeedNewView.swift in Sources */,
+				8434E6B42EE9A5D200D0C3B4 /* UserItemView.swift in Sources */,
+				8454C9B52EE06D9200831892 /* ZaloVideoView.swift in Sources */,
+				8454C99D2EDF1CA300831892 /* ZaloTabView.swift in Sources */,
+				8434E6B82EE9B52600D0C3B4 /* ProfileUseView.swift in Sources */,
+				8454C9C62EE1BB2C00831892 /* APIError.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		8454C9662EDF126F00831892 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = BRR9G949U9;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8454C9672EDF126F00831892 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = BRR9G949U9;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		8454C9692EDF126F00831892 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BRR9G949U9;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 15.7;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Hhoai204.FeedNewZalo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SDKROOT = auto;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				XROS_DEPLOYMENT_TARGET = 26.1;
+			};
+			name = Debug;
+		};
+		8454C96A2EDF126F00831892 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BRR9G949U9;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 15.7;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Hhoai204.FeedNewZalo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SDKROOT = auto;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				XROS_DEPLOYMENT_TARGET = 26.1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8454C9582EDF126D00831892 /* Build configuration list for PBXProject "FeedNewZalo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8454C9662EDF126F00831892 /* Debug */,
+				8454C9672EDF126F00831892 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8454C9682EDF126F00831892 /* Build configuration list for PBXNativeTarget "FeedNewZalo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8454C9692EDF126F00831892 /* Debug */,
+				8454C96A2EDF126F00831892 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8434E6A92EE1BE7600D0C3B4 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.10.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8434E6AA2EE1BE7600D0C3B4 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8434E6A92EE1BE7600D0C3B4 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 8454C9552EDF126D00831892 /* Project object */;
+}
