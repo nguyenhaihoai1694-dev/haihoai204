@@ -1,6 +1,7 @@
 import SwiftUI
 
 // MARK: - Destination
+// toi code o day
 
 enum SettingDestination: Hashable {
     case accountSecurity
